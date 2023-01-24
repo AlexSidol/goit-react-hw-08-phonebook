@@ -22,10 +22,10 @@ const ContactList = () => {
 
   return (
     <ul className={css.contacts}>
-      {visibleContacts.map(({ id, name, phone }) => (
+      {visibleContacts.map(({ id, name, number }) => (
         <li className={css.contact__list} key={id}>
           <span className={css.contact__item}>{name}: </span>
-          <span className="contact__item">{phone} </span>
+          <span className="contact__item">{number} </span>
           <button
             className={css.contacts__button}
             type="button"

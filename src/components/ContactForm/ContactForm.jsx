@@ -8,7 +8,7 @@ import css from './ContactForm.module.css';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
@@ -21,8 +21,8 @@ export default function ContactForm() {
         setName(value);
         break;
 
-      case 'phone':
-        setPhone(value);
+      case 'number':
+        setNumber(value);
         break;
 
       default:
@@ -42,7 +42,7 @@ export default function ContactForm() {
       return;
     }
 
-    const newContact = { name, phone };
+    const newContact = { name, number };
 
     const action = addNewContact(newContact);
     dispatch(action);
@@ -51,7 +51,7 @@ export default function ContactForm() {
 
   const reset = () => {
     setName('');
-    setPhone('');
+    setNumber('');
   };
 
   return (
@@ -71,13 +71,13 @@ export default function ContactForm() {
       <label className={css.form__label}>
         Number
         <input
-          value={phone}
+          value={number}
           className={css.form__input}
           onChange={handleChange}
           type="tel"
-          name="phone"
+          name="number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          title="phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
           placeholder="906-02-02"
         />
