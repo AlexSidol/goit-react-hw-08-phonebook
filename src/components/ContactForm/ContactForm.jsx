@@ -79,7 +79,7 @@ export default function ContactForm() {
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
-          placeholder="906-02-02"
+          placeholder="906-0402-0402"
         />
       </label>
       <button className={css.input__button} type="submit">

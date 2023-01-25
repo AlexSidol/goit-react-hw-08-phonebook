@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>
-        your private contact book
+        Your private contact book
         <span role="img" aria-label="Greeting icon">
           💁‍♀️
         </span>

@@ -1,18 +1,16 @@
 .filter {
   display: flex;
-  justify-content: center;
-  width: 400px;
-  font-size: 700;
-  border-radius: 8px;
-  padding: 30px 15px;
-  background-color: beige;
+  justify-content: left;
+  padding: 0px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .filter__input {
   display: block;
   background-color: inherit;
   border: none;
-  border-bottom: 2px solid greenyellow;
+  border-bottom: 3px solid rgba(23, 26, 32, 0.8);
   margin-top: 15px;
   margin-bottom: 15px;
 }

@@ -30,18 +30,16 @@ export default function App() {
   return (
     <div className={css.phonebook__form}>
       <ToastContainer position="top-center" />
-      <h1>Phonebook</h1>
+      <h1 className={css.contacts__name}>Phonebook</h1>
+      <h2 className={css.contacts__name}>Add new contact</h2>
       <ContactForm />
 
-      <h2>Contacts</h2>
-
-      {contacts.length > 0 ? (
+      {contacts.length > 0 && (
         <div>
+          <h2 className={css.contacts__name}>Contacts list</h2>
           <Filter />
           <ContactList />
         </div>
-      ) : (
-        <p>Please, add contact ☝️</p>
       )}
       {isLoading && !error && <p>Sorry, but i have paws</p>}
     </div>

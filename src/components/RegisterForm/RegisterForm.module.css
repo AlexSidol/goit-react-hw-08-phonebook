@@ -7,3 +7,22 @@
   flex-direction: column;
   margin-bottom: 16px;
 }
+
+.login__button {
+  min-width: 118px;
+  border: none;
+  border-radius: 50px;
+  flex-grow: 1;
+  font-size: 14px;
+  height: 36px;
+  line-height: 20px;
+  padding: 0 16px 0 16px;
+  background-color: rgba(23, 26, 32, 0.8);
+  color: white;
+  cursor: pointer;
+}
+
+.contacts__button:hover,
+.contacts__button:focus {
+  background-color: rgba(23, 26, 32, 1);
+}
